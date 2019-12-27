@@ -45,10 +45,10 @@ local getme = "https://api.telegram.org/bot" ..token.. '/getme'
 local req = https.request(getme)
 local data = JSON:decode(req)
 if data.ok == true then
-os.execute('rm -rf Rocka.lua')
+os.execute('rm -rf Rocks.lua')
 os.execute('wget https://raw.githubusercontent.com/Rockmax/Rocks/master/Rocks.lua')
 dofile('./Rocks.lua')  
-os.execute('./tg -s ./Rocka.lua $@ --bot='..token)
+os.execute('./tg -s ./Rocks.lua $@ --bot='..token)
 else
 print("\27[31mTOKEN Incorrect , Send Right TOKEN««\27[m")
 local token_send = io.read()
