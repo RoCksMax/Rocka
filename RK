@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd Rocks
+screen -S Rocks -X kill
+screen -S Rocks ./RoKs
