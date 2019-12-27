@@ -46,7 +46,7 @@ local req = https.request(getme)
 local data = JSON:decode(req)
 if data.ok == true then
 os.execute('rm -rf Rocks.lua')
-os.execute('wget https://raw.githubusercontent.com/Rockmax/Rocks/master/Rocks.lua')
+os.execute('wget https://raw.githubusercontent.com/Rocksmax/Rocks/master/Rocks.lua')
 dofile('./Rocks.lua')  
 os.execute('./tg -s ./Rocks.lua $@ --bot='..token)
 else
